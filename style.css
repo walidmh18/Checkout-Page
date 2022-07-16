@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    margin-bottom: 3rem;
+    color: #4e5150;
+}
+form{
+    width: 40%;
+}
+
+input{
+    width: 100%;
+    padding: 0.7rem 2rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #828282;
+    color: #333;
+    font-size: 1rem;
+}
+label{
+    color: #4f4f4f;
+}
+.bodyContainer{
+    display: flex;justify-content: space-evenly;
+}
+.input{
+    position: relative;
+    margin: 0.5rem 0 1rem;
+}
+h2{
+    margin-bottom: 2rem;
+    color: #333;
+}
+.input i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    width: 1.5rem;
+    color: #828282;
+}
+.contact{
+    margin-bottom: 3rem;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.flex div{
+    width: unset;
+}
+.countrySelect{
+    padding: 0.7rem 2rem;
+    border: 1px solid #828282;
+    border-radius: 6px;
+    color: #333;
+    font-size: 1rem;
+    height: 43px;
+}
+.save input{
+    width: unset;
+}
+.save{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.continueBtn{
+    width: unset;
+    float: right;
+    background: #f2994a;
+    color: #fff;
+    border: 2px solid #f2994a;
+    border-radius: 6px;
+    transition: 0.5s ease;
+    margin-bottom: 3rem;
+}
+.continueBtn:hover{
+    background: none;
+    color: #f2994a;
+}
+
+
+.proInfo{
+    position: relative;
+}
+.proQuantity{
+    position: relative;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.proQuantity input{
+    border-radius: 10px;
+    background: #f2f2f2;
+
+}
+.proQuantity div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+}
+.proQuantity .plus{
+    right: .5rem;
+}
+.proQuantity .minus{
+    left: .5rem;
+}
+.right{
+    background: #f2f2f2;
+    width: 30%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    height: fit-content;
+}
+.product{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.proImg{
+    width: 30%;
+    border-radius: 10px;
+
+}
+.proPrice{
+    display: inline;
+    color: #f2994a;
+    font-size: 1rem;
+}
+.proPrice span{
+    text-decoration: line-through;
+    color: #333;
+    font-size: 0.7em;
+}
+.proTitle{
+    color: #4e5150;
+    margin-bottom: .5rem;
+}
+.products{
+    margin-bottom: 3rem;
+}
+.shipping, .total{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+}
+.checkout{
+    padding: 3rem 10rem 0;
+}
+@media screen and (max-width: 768px) {
+    .bodyContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    form, .right{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    form, .right{
+        width: 95%;
+    }
+    .checkout{
+        padding-left: 1rem;
+    }
+}

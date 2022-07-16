@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1 class="checkout">Checkout</h1>
+    <div class="bodyContainer">
+        <form action="" onsubmit="alert('done')">
+            <div class="contact">
+                <h2>Contact Information</h2>
+                <label for="eamilInp">E-Mail</label>
+                <div class="input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="" id="eamilInp"  placeholder="Enter Your email" required>
+                </div>
+                <label for="PhoneInp">Phone</label>
+                <div class="input">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" name="" id="PhoneInp" placeholder="Enter Your Phone number" required>
+                </div>
+            </div>
+
+            <div class="Shipping">
+                <h2>Shipping Adress</h2>
+                <label for="nameInp">Full Name</label>
+                <div class="input">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <input type="text" name="" id="nameInp"  placeholder="Enter Your full name" required>
+                </div>
+
+                <label for="adressInp">Adress</label>
+                <div class="input">
+                    <i class="fa-solid fa-house"></i>
+                    <input type="text" name="" id="nameInp"  placeholder="Enter Your adress" required>
+                </div>
+
+                <label for="cityInp">City</label>
+                <div class="input">
+                    <i class="fa-solid fa-city"></i>
+                    <input type="text" name="" id="cityInp"  placeholder="Enter Your city" required>
+                </div>
+                <div class="flex">
+                    <div>
+                        <label for="">Country</label>
+                        <div class="input">
+                            <i class="fa-solid fa-earth-europe"></i>
+                            <select name="" id="" class="countrySelect">
+                                <option value="" selected hidden disabled required>Your Country ...</option>
+                                <option value="Algeria"> Algeria</option>
+                                <option value="USA"> USA</option>
+                                <option value="UK"> UK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Postal Code</label>
+                        <div class="input zipcode">
+                            <i class="fa-solid fa-map-pin"></i>
+                            <input type="number" name="" id="" maxlength="6" required placeholder="Your Postal Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="save">
+                <input type="checkbox">
+                <p>save this information for next time</p>
+            </div>
+            <input type="submit" value="Continue" class="continueBtn">
+        </form>
+        <div class="right">
+            <div class="products">
+                <div class="product">
+                    <img src="images/photo1.png" alt="" class="proImg">
+                    <div class="proInfo">
+                        <h2 class="proTitle">Vintage Backbag</h2>
+                        <p class="proPrice">$55.99 <span>$94.99</span></p> 
+                        <div class="proQuantity">
+                            <div class="minus" onclick="QuSub(this.nextElementSibling.id)"><i class="fa-solid fa-minus"></i></div>
+                            <input  type="number" name="" id="pro1Qua">
+                            <div class="plus" onclick="QuAdd(this.previousElementSibling.id)"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/photo2.png" alt="" class="proImg">
+                    <div class="proInfo">
+                        <h2 class="proTitle">Vintage Backbag</h2>
+                        <p class="proPrice">$55.99 <span>$94.99</span></p> 
+                        <div class="proQuantity">
+                            <div class="minus" onclick="QuSub(this.nextElementSibling.id)"><i class="fa-solid fa-minus"></i></div>
+                            <input type="number" name="" id="pro2Qua">
+                            <div class="plus" onclick="QuAdd(this.previousElementSibling.id)"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shipping">
+                <p>shipping</p>
+                <p>$9</p>
+            </div>
+            <div class="total">
+                <p>total</p>
+                <p>$170</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
